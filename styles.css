@@ -20,7 +20,10 @@ body{
     margin: 10px;
     background-color: black;
 }
-
+.category{
+    border: solid 3px gray;
+    padding: 10px;
+}
 .categoryHeading{
 font-size: 30px;
 color: wheat;
@@ -31,12 +34,14 @@ text-decoration: underline;
 li{
     color: white;
     margin: 10px;
- 
+    font-size: 15px;
     padding: 10px;
 }
 p{
     background-color: blue;
     display: inline;
     color: black;
+    padding: 3px;
+    border-radius: 10px;
 }
 
