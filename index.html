@@ -28,6 +28,30 @@
     
             </div>
 </div>
+<div class="sections">
+    
+    <div class="category">
+        <div class="categoryHeading">Google Maps API w/ NPM Loader</div>
+       <ol>
+        <li>npm install @googlemaps/js-api-loader</li>
+        <li>import { Loader } from "@googlemaps/js-api-loader"<p>google Maps API LOADER</p></li>
+        <li>const loader = new Loader({
+            apiKey: "AIzaSyAwT3GaZycHG03SLrbLQ0pbQyZTzB6EVI4",
+            version: "weekly",
+            ...additionalOptions,
+          });    <p>Function for Loader from API</p></li>
+          <li>loader.load().then(async () => {
+            const { Map } = await google.maps.importLibrary("maps");
+          
+            map = new Map(document.getElementById("map"), {
+              center: { lat: -34.397, lng: 150.644 },
+              zoom: 8,
+            });
+          }); <br><br><p>initialize map with async function and create NEW Map</p></li>
+       </ol>
+
+    </div>
+</div>
         
         <script src="main.js" async defer></script>
     </body>
